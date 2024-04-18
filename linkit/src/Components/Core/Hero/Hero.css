@@ -63,8 +63,11 @@ Date         : 11th April 2024
     justify-content: space-between;
     align-items: center;
     transition: all 0.5s ease;
-    border: 4px solid black
+    border: 4px solid black;
+    color:black;
+    font-weight: 900;
 }
+
 
 .intro-button:hover {
     transform: scale(1.1);
