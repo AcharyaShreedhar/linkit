@@ -1,0 +1,157 @@
+/*
+-----------------------------------------------------------
+Group Name   : Group 4
+Project Name : Linkit
+Student Name : Shree Dhar Acharya 
+Student Id   : 8899288
+Github User  : AcharyaShreedhar
+Date         : 11th April 2024
+------------------------------------------------------------
+*/
+.border-top {
+    height: 4px;
+    width: 100%;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform 0.15s 0.45s linear;
+}
+
+button:hover .border-top {
+    transform: translateX(0);
+    transition: transform 0.15s linear;
+}
+
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel {
+    height: 40vh;
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.carousel-image {
+    height: 100%;
+    width: auto;
+}
+
+.home-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.5rem, 0.8rem, 1.2rem);
+}
+
+h1 {
+    margin-bottom: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.tabs {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+
+.display-images {
+    margin: 20px;
+}
+
+.display-images [class^="item"] {
+    display: flex;
+    background-color: #F5F5F5;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.item1 {
+    grid-row: 1/3;
+}
+
+.display-images img {
+    width: 50%;
+    height: auto;
+}
+
+.display-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+
+    .carousel-text {
+        font-size: 16px;
+        line-height: 1.8;
+        padding-left: 10px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    .carousel-container {
+        margin-top: 1.5rem;
+    }
+
+    .carousel-text {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+
+    .carousel-text h1 {
+        font-size: 1.1rem;
+    }
+
+    .home-products h1 {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.1rem;
+    }
+
+    .carousel {
+        height: 25vh;
+    }
+
+    .carousel-text {
+        font-size: 12px;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+    }
+}
