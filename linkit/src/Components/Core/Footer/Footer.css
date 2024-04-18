@@ -1,0 +1,133 @@
+/*
+-----------------------------------------------------------
+Group Name   : Group 4
+Project Name : Linkit
+Student Name : Mistry Mayuree Rakeshbhai 
+Student Id   : 8873677
+Github       : mistrymayuree72@gmail.com 
+Date         : 10th April 2024
+------------------------------------------------------------
+*/
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 150px;
+    width: auto;
+}
+
+
+#footer-search {
+    grid-column: 2/span 3;
+    display: flex;
+    justify-content: center;
+}
+
+#footer-search input,
+#footer-search button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#footer-search input {
+    width: 80%;
+    height: 50px;
+    border-radius: 30px 0 0 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#footer-search button {
+    padding: 10px;
+    background-color: white;
+    height: 70px;
+    width: 50px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+}
+
+.media-container {
+    font-size: clamp(2rem, 2.5rem, 3rem);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+#footer-support {
+    grid-column: 2/span 3;
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5rem;
+    font-size: clamp(0.5rem, 0.8rem, 1rem);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    footer {
+        padding: 10px 0px;
+    }
+
+    #footer-container {
+        grid-template-rows: repeat(1, 1fr);
+        align-items: start;
+        padding-top: 20px;
+    }
+
+    .footer-logo {
+        grid-column: 1;
+        margin-bottom: 0px;
+    }
+
+    .footer-logo img {
+        height: 60px;
+        width: auto;
+    }
+
+    #footer-search input {
+        width: 50%;
+        height: 30px;
+    }
+
+    #footer-search button {
+        height: 50px;
+    }
+
+    .media-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+        font-size: clamp(1rem, 1.5rem, 2.0rem);
+    }
+
+    #footer-support {
+        padding-top: 25px;
+        text-align: center;
+        font-size: clamp(0.5rem, 0.8rem, 0.8rem);
+    }
+
+    .footer-support div {
+        margin-bottom: 20px;
+    }
+}
