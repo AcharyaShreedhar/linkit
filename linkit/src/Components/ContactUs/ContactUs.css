@@ -1,0 +1,100 @@
+/*
+-----------------------------------------------------------
+Group Name   : Group 4
+Project Name : Linkit
+Student Name : Viranshi Patel 
+Student Id   : 8879482
+Github       : viranshipatel238@gmail.com
+Date         : 13th April 2024
+------------------------------------------------------------
+*/
+
+.contact {
+    margin: 0 20px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.map-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: none;
+}
+
+
+.contact-form {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #62ffdda6, 0 5px 5px 0 #62ffdda6;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #7C5FC2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        border-left: none;
+        padding-left: 0;
+        padding: 20px;
+    }
+
+    .contact-form form {
+        width: 95%;
+    }
+
+    .contact-form label {
+        text-align: left;
+    }
+}
