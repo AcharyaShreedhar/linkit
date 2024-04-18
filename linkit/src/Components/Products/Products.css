@@ -1,0 +1,167 @@
+/*
+-----------------------------------------------------------
+Group Name   : Group 4
+Project Name : Linkit
+Student Name : Shree Dhar Acharya 
+Student Id   : 8899288
+Github User  : AcharyaShreedhar
+Date         : 12th April 2024
+------------------------------------------------------------
+*/
+.banner-container {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C5FC2;
+}
+
+.banner-container div {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7C88F1;
+    box-shadow: 20px 20px 3px #62FFDE;
+    color: white;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+.products-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.product-type .active {
+    font-weight: bold;
+    color: #7C5FC2;
+}
+
+.product-catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+[class^="computer"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+[class^="computer"]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 5px 0 #62ffdda6, 0 1px 1px 0 #62ffdda6;
+}
+
+[class^="computer"] img {
+    width: 80%;
+    height: auto;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+.product-price {
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+
+.product-ratings {
+    display: flex;
+    align-items: center;
+
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+
+    .product-type {
+        justify-content: space-around;
+    }
+
+    .product-catalog {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    [class^="computer"] {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .product-catalog {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    [class^="computer"] {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .product-catalog img {
+        max-width: 70%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+
+    .product-details .product-name {
+        font-size: 12px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 5px;
+    }
+
+    .product-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .product-details {
+        margin-top: 5px;
+    }
+
+    .product-details .product-price {
+        margin-top: 3px;
+    }
+
+    .product-details .product-ratings {
+        margin-top: 3px;
+    }
+}
