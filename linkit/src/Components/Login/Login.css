@@ -1,0 +1,66 @@
+/*
+-----------------------------------------------------------
+Group Name   : Group 4
+Project Name : Linkit
+Student Name : HIT SANJAYBHAI SHAH 
+Student Id   : 8872340
+Github       : HitBhai
+Date         : 13th April 2024
+------------------------------------------------------------
+*/
+
+.login-page {
+    width: 600px;
+    padding: 8% 0 0;
+    margin: auto;
+    border-radius: 20px;
+  }
+
+  .label{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 600px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    font-size: clamp(14px,16px,18px);
+    box-shadow: 0 0 20px 0 #62ffdda6, 0 5px 5px 0 #62ffdda6;
+  }
+  .form input {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .form button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #7C5FC2;
+    border-radius: 10px;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  /* Mobile styles */
+@media (max-width: 768px) {
+  .login-page {
+    width:360px
+  }
+}
