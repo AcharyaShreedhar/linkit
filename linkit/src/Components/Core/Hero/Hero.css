@@ -1,0 +1,126 @@
+/*
+-----------------------------------------------------------
+Group Name   : Group 4
+Project Name : Linkit
+Student Name : Viranshi Patel 
+Student Id   : 8879482
+Github       : viranshipatel238@gmail.com
+Date         : 11th April 2024
+------------------------------------------------------------
+*/
+.intro-container {
+    height: 60vh;
+    width: 100%;
+    background-image: url(../../../Images/cbg.png);
+    background-size: cover;
+}
+
+.intro-text {
+    color: white;
+    font-weight: 900;
+    font-size: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 50px;
+}
+
+.intro-text a {
+    text-decoration: none;
+}
+
+.arrow-button {
+    height: 50px;
+    width: 50px;
+}
+
+/*Adding animation on Shop Now button*/
+.animate {
+    animation: moveArrow 2s linear infinite;
+}
+
+@keyframes moveArrow {
+
+    0%,
+    100% {
+        transform: translateX(-20px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.intro-button {
+    padding: 0 20px;
+    width: 300px;
+    background-color: #7C5FC2;
+    height: 80px;
+    border-radius: 50px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 4px solid black
+}
+
+.intro-button:hover {
+    transform: scale(1.1);
+    border: 4px solid #62FFDE;
+    ;
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+
+    .intro-container {
+        height: 70vh;
+        background-image: url(../../../Images/cbg.png);
+    }
+
+    .intro-text {
+        font-size: 30px;
+        padding-left: 20px;
+    }
+
+    .arrow-button {
+        height: 40px;
+        width: 40px;
+    }
+
+    .intro-button {
+        width: 250px;
+        height: 70px;
+        font-size: small;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    .intro-container {
+        height: 40vh;
+        background-image: url(../../../Images/cbgm.png);
+    }
+
+    .intro-text {
+        font-size: 24px;
+        padding-left: 20px;
+        justify-content: center;
+    }
+
+    .arrow-button {
+        height: 30px;
+        width: 30px;
+    }
+
+
+    .intro-button {
+        width: 120px;
+        height: 60px;
+        font-size: x-small;
+        margin-top: 2rem;
+    }
+}
