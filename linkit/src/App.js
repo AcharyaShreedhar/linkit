@@ -12,7 +12,7 @@ Date         : 11th April 2024
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./App.css";
-import AboutUs from "./Components/About Us/AboutUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Footer from "./Components/Core/Footer/Footer";
 import Header from "./Components/Core/Header/Header";
