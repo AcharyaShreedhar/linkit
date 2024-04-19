@@ -23,10 +23,10 @@ Date         : 12th April 2024
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7C88F1;
-    box-shadow: 20px 20px 3px #62FFDE;
-    color: white;
-    font-size: clamp(1rem, 1.5rem, 2rem);
+    background-color: #eff264;
+    box-shadow: 20px 20px 3px #59e6c8;
+    color: red;
+    font-size: clamp(2rem, 2.5rem, 3.5rem);
 }
 
 .products-container h1 {
@@ -52,8 +52,10 @@ Date         : 12th April 2024
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     margin: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 [class^="computer"] {
@@ -61,7 +63,8 @@ Date         : 12th April 2024
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -71,15 +74,26 @@ Date         : 12th April 2024
 }
 
 [class^="computer"] img {
-    width: 80%;
+    width: 60%;
     height: auto;
+    padding: 10px;
 }
 
 .product-details {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 5px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.details-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
@@ -93,6 +107,42 @@ Date         : 12th April 2024
     display: flex;
     align-items: center;
 
+}
+
+.btn-deal {
+    padding: 0 10px;
+    color: white;
+    background-color: red;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: red;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.btn-deal:hover {
+    transform: scale(1.1);
+}
+
+.btn-cart {
+    padding: 0 10px;
+    color: black;
+    background-color: #ffd816;
+    border: #ffd816;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.btn-cart:hover {
+    transform: scale(1.1);
 }
 
 /* Tablet styles */
