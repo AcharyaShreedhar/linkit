@@ -25,7 +25,7 @@ function HomePage() {
         <div className="carousel">
           <div className="carousel-text">
             <div>
-              <b>Bundel and save 15%</b>
+              <b>Bundle and save 15%</b>
             </div>
             <div>
               When you buy it with an Eligible
